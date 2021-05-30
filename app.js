@@ -23,7 +23,9 @@ var cors = require('cors')
 
 
 const app = express();
+
 app.use(cors())
+
 app.set('trust proxy', 1);
 const limiter = rateLimit({
     windowMs: 15 * 1000, // 15 minutes
